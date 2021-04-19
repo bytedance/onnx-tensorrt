@@ -21,7 +21,8 @@ cc_library(
         'OnnxAttrs.cpp',
     ],
     deps=deps,
-    defs=defs
+    defs=defs,
+    extra_cppflags=['-Wno-missing-field-initializers']
 )
 
 cc_binary(
